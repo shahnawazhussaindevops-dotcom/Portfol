@@ -1,0 +1,29 @@
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both added:      README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+	modified:   components/Overlay.tsx
+	modified:   components/ScrollyCanvas.tsx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.next/
+	.vscode/
+	git_status.txt
+	node_modules/
+	package-lock.json.bak
+	package.json.bak
+
+no changes added to commit (use "git add" and/or "git commit -a")

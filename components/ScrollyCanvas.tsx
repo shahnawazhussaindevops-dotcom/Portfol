@@ -1,13 +1,17 @@
 "use client";
 
+import React, { useEffect, useRef, useState } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
 
 export default function ScrollyCanvas({ children }: { children?: React.ReactNode }) {
+    const containerRef = useRef<HTMLDivElement>(null);
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [images, setImages] = useState<HTMLImageElement[]>([]);
     const [isLoaded, setIsLoaded] = useState(false);
-    const { scrollYProgress } = useScroll();
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start start", "end end"]
+    });
 
     const frameCount = 120; // 000.webp to 119.webp
 
@@ -86,7 +90,7 @@ export default function ScrollyCanvas({ children }: { children?: React.ReactNode
                 const currentScroll = scrollYProgress.get();
                 const frameIndex = Math.min(
                     frameCount - 1,
-                    Math.floor(currentScroll * (frameCount - 1))
+                    Math.floor(currentScroll * frameCount)
                 );
                 renderFrame(frameIndex);
             }
@@ -103,21 +107,26 @@ export default function ScrollyCanvas({ children }: { children?: React.ReactNode
 
         const frameIndex = Math.min(
             frameCount - 1,
-            Math.floor(latest * (frameCount - 1))
+            Math.floor(latest * frameCount)
         );
 
         requestAnimationFrame(() => renderFrame(frameIndex));
     });
 
     return (
-        <div className="h-[600vh] relative bg-black">
+        <div ref={containerRef} className="h-[600vh] relative bg-black">
             <div className="sticky top-0 h-screen w-full overflow-hidden">
                 <canvas
                     ref={canvasRef}
                     className="block w-full h-full object-cover opacity-60 backdrop-brightness-50"
                 />
                 {/* Children (Overlay) sits on top of sticky canvas */}
-                {children}
+                {React.Children.map(children, (child: React.ReactNode) => {
+                    if (React.isValidElement(child)) {
+                        return React.cloneElement(child as React.ReactElement<any>, { scrollYProgress });
+                    }
+                    return child;
+                })}
 
                 {!isLoaded && (
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#121212] z-50">
@@ -129,3 +138,4 @@ export default function ScrollyCanvas({ children }: { children?: React.ReactNode
         </div>
     );
 }
+
