@@ -13,6 +13,7 @@ export default function Navbar() {
                 <span className="font-black tracking-tighter text-xl">SH.</span>
                 <div className="w-px h-4 bg-white/20"></div>
                 <div className="hidden md:flex gap-6 text-[10px] uppercase tracking-widest font-bold text-gray-400">
+                    <a href="/webdesigns" className="hover:text-white transition-colors">Web Designs</a>
                     <a href="#" className="hover:text-white transition-colors">Experience</a>
                     <a href="#" className="hover:text-white transition-colors">Strategy</a>
                     <a href="#" className="hover:text-white transition-colors">Tech</a>
