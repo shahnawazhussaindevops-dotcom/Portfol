@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 interface WebProject {
     name: string;
     url: string;
+    thumb: string;
     desc: string;
     tags: string[];
     accent: string;
@@ -17,6 +18,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Neerjharna",
         url: "https://neerjharna.vercel.app/",
+        thumb: "/thumbnails/neerjharna.jpg",
         desc: "Discover the hidden cascade of Rishikesh.",
         tags: ["Landing Page", "Vercel"],
         accent: "#10b981",
@@ -24,6 +26,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Porsche",
         url: "https://porsche-flax.vercel.app/",
+        thumb: "/thumbnails/porsche.jpg",
         desc: "Porsche 911 GT3 RS — Defy Gravity.",
         tags: ["Landing Page", "Vercel"],
         accent: "#ef4444",
@@ -31,6 +34,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Gaur City",
         url: "https://gaurcity-ten.vercel.app/",
+        thumb: "/thumbnails/gaur-city.jpg",
         desc: "Gaur City Centre — the story of your stay, in film.",
         tags: ["Showcase", "Vercel"],
         accent: "#f59e0b",
@@ -38,6 +42,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Realme Speaker",
         url: "https://realmespeaker.vercel.app/",
+        thumb: "/thumbnails/realme-speaker.jpg",
         desc: "Sound that speaks for itself — a product page for Realme speaker.",
         tags: ["Product Page", "Vercel"],
         accent: "#3b82f6",
@@ -45,6 +50,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Taste The Thunder",
         url: "https://tastethethunder.vercel.app/",
+        thumb: "/thumbnails/taste-the-thunder.jpg",
         desc: "Premium beverage brand experience with bold visuals.",
         tags: ["Brand Site", "Vercel"],
         accent: "#f97316",
@@ -52,6 +58,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Asus Laptop",
         url: "https://asus-laptop.vercel.app/",
+        thumb: "/thumbnails/asus-laptop.jpg",
         desc: "Shop laptops, accessories, and more — an Asus India inspired storefront.",
         tags: ["Storefront", "Vercel"],
         accent: "#a855f7",
@@ -59,6 +66,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Sultani Jan Seva Kendra",
         url: "https://sultanijansevakendra.vercel.app/",
+        thumb: "/thumbnails/sultani-jan-seva-kendra.jpg",
         desc: "Cyber cafe & documentation services.",
         tags: ["Service Site", "Vercel"],
         accent: "#f59e0b",
@@ -66,6 +74,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "CinePose",
         url: "https://cinepose.vercel.app/",
+        thumb: "/thumbnails/cinepose.jpg",
         desc: "Ultra AI cinema camera product experience.",
         tags: ["Product Page", "Vercel"],
         accent: "#ef4444",
@@ -73,15 +82,12 @@ const PROJECTS: WebProject[] = [
     {
         name: "Portfolio",
         url: "https://www.shahnawazhussaindevops.in/",
+        thumb: "/thumbnails/portfolio.jpg",
         desc: "My personal portfolio website.",
         tags: ["Portfolio", "Vercel"],
         accent: "#3b82f6",
     },
 ];
-
-function thumbnailUrl(url: string) {
-    return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200&h=675`;
-}
 
 function ProjectCard({ project, index }: { project: WebProject; index: number }) {
     const [thumbFailed, setThumbFailed] = useState(false);
@@ -126,7 +132,7 @@ function ProjectCard({ project, index }: { project: WebProject; index: number })
                 ) : (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
-                        src={thumbnailUrl(project.url)}
+                        src={project.thumb}
                         alt={project.name}
                         loading="lazy"
                         onError={() => setThumbFailed(true)}
