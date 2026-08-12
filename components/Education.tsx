@@ -7,7 +7,7 @@ const education = [
         degree: "Bachelor of Computer Application (BCA)",
         institution: "Maharishi University of Information and Technology",
         location: "Noida, India",
-        period: "Expected Graduation: 2026",
+        period: "Graduation: 2026",
         status: "ongoing",
         grade: null,
         coursework: [

@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
+import WebDesignsBanner from "@/components/WebDesignsBanner";
 
 export default function Home() {
     return (
@@ -27,6 +28,7 @@ export default function Home() {
                 <Skills />
                 <Experience />
                 <Projects />
+                <WebDesignsBanner />
                 <Certifications />
                 <Education />
             </div>
