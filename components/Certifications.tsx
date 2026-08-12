@@ -17,19 +17,19 @@ const certifications = [
 
 export default function Certifications() {
     return (
-        <section id="certifications" className="relative z-20 bg-[#121212] py-32 px-6 md:px-12 border-t border-white/5">
+        <section id="certifications" className="relative z-20 bg-[#121212] py-20 sm:py-28 md:py-32 px-4 sm:px-6 md:px-12 border-t border-white/5">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="mb-20"
+                    className="mb-12 sm:mb-16 md:mb-20"
                 >
-                    <p className="text-cyan-400 text-sm tracking-[0.3em] uppercase mb-4 font-medium">Credentials</p>
-                    <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">Certifications</h2>
-                    <div className="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full" />
-                    <p className="text-gray-400 text-lg mt-6">
+                    <p className="text-cyan-400 text-xs sm:text-sm tracking-[0.3em] uppercase mb-3 sm:mb-4 font-medium">Credentials</p>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">Certifications</h2>
+                    <div className="h-1 w-16 sm:w-24 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full" />
+                    <p className="text-gray-400 text-base sm:text-lg mt-4 sm:mt-6">
                         <span className="text-white font-semibold">10× Oracle Certified Professional</span> across Cloud Infrastructure,
                         DevOps, Database Services, and AI/ML.
                     </p>
@@ -41,16 +41,16 @@ export default function Certifications() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="mb-12 inline-flex items-center gap-3 bg-gradient-to-r from-orange-500/20 to-red-600/20 border border-orange-500/30 rounded-2xl px-6 py-4"
+                    className="mb-8 sm:mb-12 inline-flex items-center gap-3 bg-gradient-to-r from-orange-500/20 to-red-600/20 border border-orange-500/30 rounded-xl sm:rounded-2xl px-4 sm:px-6 py-3 sm:py-4"
                 >
-                    <span className="text-3xl">🔶</span>
+                    <span className="text-2xl sm:text-3xl">🔶</span>
                     <div>
-                        <p className="text-white font-bold text-lg">Oracle University</p>
-                        <p className="text-orange-400 text-sm">All Certifications Issued 2025</p>
+                        <p className="text-white font-bold text-base sm:text-lg">Oracle University</p>
+                        <p className="text-orange-400 text-xs sm:text-sm">All Certifications Issued 2025</p>
                     </div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     {certifications.map((cert, i) => (
                         <motion.div
                             key={cert.name}
@@ -58,13 +58,13 @@ export default function Certifications() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.08, duration: 0.5 }}
-                            className="flex items-center gap-4 bg-white/4 border border-white/8 hover:border-orange-500/30 hover:bg-white/7 rounded-xl p-5 transition-all duration-300 group"
+                            className="flex items-center gap-3 sm:gap-4 bg-white/[0.04] border border-white/[0.08] hover:border-orange-500/30 hover:bg-white/[0.07] rounded-xl p-4 sm:p-5 transition-all duration-300 group"
                         >
-                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white font-bold text-sm">
+                            <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white font-bold text-xs sm:text-sm">
                                 {i + 1}
                             </div>
                             <div className="flex-1 min-w-0">
-                                <p className="text-white text-sm font-medium leading-snug group-hover:text-orange-300 transition-colors">
+                                <p className="text-white text-xs sm:text-sm font-medium leading-snug group-hover:text-orange-300 transition-colors">
                                     {cert.name}
                                 </p>
                                 <p className="text-gray-500 text-xs mt-1">Oracle University · {cert.year}</p>

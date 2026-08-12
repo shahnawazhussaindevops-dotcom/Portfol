@@ -25,15 +25,16 @@ const achievements = [
 
 export default function Projects() {
     return (
-        <section className="py-24 px-6 md:px-12 bg-[#0d0d0d]">
+        <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#0d0d0d]">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-center mb-20 gap-8">
-                    <h2 className="text-4xl md:text-6xl font-bold text-white">Major Milestones</h2>
-                    <div className="h-[1px] flex-grow bg-white/10 mx-8 hidden md:block"></div>
-                    <p className="text-gray-500 font-mono text-sm max-w-xs text-right">SCROLL TO DISCOVER KEY PROJECTS & IMPACT METRICS</p>
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 sm:mb-16 md:mb-20 gap-4 sm:gap-8">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">Major Milestones</h2>
+                    <p className="text-gray-500 font-mono text-xs sm:text-sm sm:max-w-xs sm:text-right">
+                        SCROLL TO DISCOVER KEY PROJECTS & IMPACT METRICS
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
                     {achievements.map((item, idx) => (
                         <motion.div
                             key={item.title}
@@ -41,7 +42,7 @@ export default function Projects() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.15 }}
-                            className="group relative h-[400px] flex flex-col justify-between p-8 rounded-[2rem] overflow-hidden border border-white/10 hover:border-primary/40 transition-all duration-500"
+                            className="group relative flex flex-col justify-between p-6 sm:p-8 rounded-2xl sm:rounded-[2rem] overflow-hidden border border-white/10 hover:border-primary/40 transition-all duration-500 min-h-[280px] sm:min-h-[340px] md:min-h-[400px]"
                         >
                             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-500/5 group-hover:to-blue-500/10 transition-all"></div>
 
@@ -50,15 +51,14 @@ export default function Projects() {
                                 <span className="px-3 py-1 bg-primary/20 text-primary text-[10px] rounded-full uppercase tracking-widest">{item.impact}</span>
                             </div>
 
-                            <div className="relative z-10">
-                                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">{item.title}</h3>
+                            <div className="relative z-10 mt-6">
+                                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-primary transition-colors">{item.title}</h3>
                                 <p className="text-sm text-gray-400 leading-relaxed font-light">
                                     {item.desc}
                                 </p>
                             </div>
 
-                            {/* Decorative background number */}
-                            <div className="absolute -bottom-10 -right-10 text-[10rem] font-black text-white/[0.02] -z-10 group-hover:text-white/[0.05] transition-colors">
+                            <div className="absolute -bottom-10 -right-10 text-[8rem] sm:text-[10rem] font-black text-white/[0.02] -z-10 group-hover:text-white/[0.05] transition-colors select-none">
                                 {idx + 1}
                             </div>
                         </motion.div>

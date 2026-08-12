@@ -11,6 +11,23 @@
     body {
         @apply bg-[#121212] text-white selection:bg-purple-500/30;
         font-feature-settings: "rlig" 1, "calt" 1;
+        /* Prevent horizontal overflow on all screen sizes */
+        overflow-x: hidden;
+    }
+
+    /* Improve tap targets for touch devices */
+    a, button {
+        @apply min-h-[44px] min-w-[44px];
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Reset inline/block elements that shouldn't be flex */
+    p a, li a, span a {
+        display: inline;
+        min-height: unset;
+        min-width: unset;
     }
 }
 

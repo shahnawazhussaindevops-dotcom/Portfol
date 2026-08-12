@@ -179,12 +179,12 @@ export default function WebDesigns() {
             <Navbar />
 
             {/* Hero */}
-            <section className="pt-40 pb-16 px-6 md:px-12">
+            <section className="pt-28 sm:pt-36 md:pt-40 pb-10 sm:pb-16 px-4 sm:px-6 md:px-12">
                 <div className="max-w-7xl mx-auto">
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-xs font-mono tracking-[0.4em] uppercase text-primary mb-6"
+                        className="text-xs font-mono tracking-[0.4em] uppercase text-primary mb-4 sm:mb-6"
                     >
                         Portfolio / Web Designs
                     </motion.p>
@@ -192,7 +192,7 @@ export default function WebDesigns() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-5xl md:text-8xl font-black tracking-tight text-white mb-6"
+                        className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white mb-4 sm:mb-6"
                     >
                         Web Designs <span className="text-gradient">Portfolio</span>
                     </motion.h1>
@@ -200,7 +200,7 @@ export default function WebDesigns() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-400 text-lg max-w-2xl font-light"
+                        className="text-gray-400 text-base sm:text-lg max-w-2xl font-light"
                     >
                         Every project below is live and deployed on Vercel. Click any card to open the
                         hosted website in a new tab.
@@ -209,9 +209,9 @@ export default function WebDesigns() {
             </section>
 
             {/* Projects grid */}
-            <section className="py-12 pb-24 px-6 md:px-12">
+            <section className="py-8 sm:py-12 pb-16 sm:pb-24 px-4 sm:px-6 md:px-12">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex items-center gap-4 mb-12">
+                    <div className="flex items-center gap-4 mb-8 sm:mb-12">
                         <span className="text-xs font-mono text-gray-500 uppercase tracking-widest">
                             {PROJECTS.length} {PROJECTS.length === 1 ? "Project" : "Projects"} Deployed
                         </span>
@@ -222,7 +222,7 @@ export default function WebDesigns() {
                         </span>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
                         {PROJECTS.map((project, idx) => (
                             <ProjectCard key={project.url} project={project} index={idx} />
                         ))}
