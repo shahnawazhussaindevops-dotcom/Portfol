@@ -17,7 +17,7 @@ interface WebProject {
 const PROJECTS: WebProject[] = [
     {
         name: "Neerjharna",
-        url: "https://neerjharna.vercel.app/",
+        url: "/webdesigns/neerjharna",
         thumb: "/thumbnails/neerjharna.jpg",
         desc: "Discover the hidden cascade of Rishikesh.",
         tags: ["Landing Page", "Vercel"],
@@ -25,7 +25,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Porsche",
-        url: "https://porsche-flax.vercel.app/",
+        url: "/webdesigns/porsche",
         thumb: "/thumbnails/porsche.jpg",
         desc: "Porsche 911 GT3 RS — Defy Gravity.",
         tags: ["Landing Page", "Vercel"],
@@ -33,7 +33,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Gaur City",
-        url: "https://gaurcity-ten.vercel.app/",
+        url: "/webdesigns/gaur-city",
         thumb: "/thumbnails/gaur-city.jpg",
         desc: "Gaur City Centre — the story of your stay, in film.",
         tags: ["Showcase", "Vercel"],
@@ -41,7 +41,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Realme Speaker",
-        url: "https://realmespeaker.vercel.app/",
+        url: "/webdesigns/realme-speaker",
         thumb: "/thumbnails/realme-speaker.jpg",
         desc: "Sound that speaks for itself — a product page for Realme speaker.",
         tags: ["Product Page", "Vercel"],
@@ -49,7 +49,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Taste The Thunder",
-        url: "https://tastethethunder.vercel.app/",
+        url: "/webdesigns/taste-the-thunder",
         thumb: "/thumbnails/taste-the-thunder.jpg",
         desc: "Premium beverage brand experience with bold visuals.",
         tags: ["Brand Site", "Vercel"],
@@ -57,7 +57,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Asus Laptop",
-        url: "https://asus-laptop.vercel.app/",
+        url: "/webdesigns/asus-laptop",
         thumb: "/thumbnails/asus-laptop.jpg",
         desc: "Shop laptops, accessories, and more — an Asus India inspired storefront.",
         tags: ["Storefront", "Vercel"],
@@ -65,7 +65,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Sultani Jan Seva Kendra",
-        url: "https://sultanijansevakendra.vercel.app/",
+        url: "/webdesigns/sultani-jan-seva-kendra",
         thumb: "/thumbnails/sultani-jan-seva-kendra.jpg",
         desc: "Cyber cafe & documentation services.",
         tags: ["Service Site", "Vercel"],
@@ -73,7 +73,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "CinePose",
-        url: "https://cinepose.vercel.app/",
+        url: "/webdesigns/cinepose",
         thumb: "/thumbnails/cinepose.jpg",
         desc: "Ultra AI cinema camera product experience.",
         tags: ["Product Page", "Vercel"],
@@ -91,12 +91,13 @@ const PROJECTS: WebProject[] = [
 
 function ProjectCard({ project, index }: { project: WebProject; index: number }) {
     const [thumbFailed, setThumbFailed] = useState(false);
+    const isExternal = project.url.startsWith("http");
 
     return (
         <motion.a
             href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={isExternal ? "_blank" : "_self"}
+            rel={isExternal ? "noopener noreferrer" : undefined}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
