@@ -6,12 +6,13 @@ import Navbar from "@/components/Navbar";
 const PROJECT_URLS: Record<string, { url: string; name: string }> = {
     "neerjharna": { url: "https://neerjharna.vercel.app", name: "Neerjharna" },
     "porsche": { url: "https://porsche-flax.vercel.app", name: "Porsche" },
-    "gaur-city": { url: "https://gaurcity-ten.vercel.app", name: "Gaur City" },
-    "realme-speaker": { url: "https://realmespeaker.vercel.app", name: "Realme Speaker" },
-    "taste-the-thunder": { url: "https://tastethethunder.vercel.app", name: "Taste The Thunder" },
-    "asus-laptop": { url: "https://asus-laptop.vercel.app", name: "Asus Laptop" },
+    "gaurcity": { url: "https://gaurcity-ten.vercel.app", name: "Gaur City" },
+    "realmespeaker": { url: "https://realmespeaker.vercel.app", name: "Realme Speaker" },
+    "tastethethunder": { url: "https://tastethethunder.vercel.app", name: "Taste The Thunder" },
+    "asuslaptop": { url: "https://asus-laptop.vercel.app", name: "Asus Laptop" },
     "cinepose": { url: "https://cinepose.vercel.app", name: "CinePose" },
-    "sultani-jan-seva-kendra": { url: "https://sultanijansevakendra.vercel.app", name: "Sultani Jan Seva Kendra" },
+    "sultanijansevakendra": { url: "https://sultanijansevakendra.vercel.app", name: "Sultani Jan Seva Kendra" },
+    "portfolio": { url: "https://shahnawazhussaindevops.in", name: "Portfolio" },
 };
 
 export default function ProjectPage({ params }: { params: { project: string } }) {

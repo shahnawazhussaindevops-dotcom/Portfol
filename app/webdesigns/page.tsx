@@ -33,7 +33,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Gaur City",
-        url: "/webdesigns/gaur-city",
+        url: "/webdesigns/gaurcity",
         thumb: "/thumbnails/gaur-city.jpg",
         desc: "Gaur City Centre — the story of your stay, in film.",
         tags: ["Showcase", "Vercel"],
@@ -41,7 +41,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Realme Speaker",
-        url: "/webdesigns/realme-speaker",
+        url: "/webdesigns/realmespeaker",
         thumb: "/thumbnails/realme-speaker.jpg",
         desc: "Sound that speaks for itself — a product page for Realme speaker.",
         tags: ["Product Page", "Vercel"],
@@ -49,7 +49,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Taste The Thunder",
-        url: "/webdesigns/taste-the-thunder",
+        url: "/webdesigns/tastethethunder",
         thumb: "/thumbnails/taste-the-thunder.jpg",
         desc: "Premium beverage brand experience with bold visuals.",
         tags: ["Brand Site", "Vercel"],
@@ -57,7 +57,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Asus Laptop",
-        url: "/webdesigns/asus-laptop",
+        url: "/webdesigns/asuslaptop",
         thumb: "/thumbnails/asus-laptop.jpg",
         desc: "Shop laptops, accessories, and more — an Asus India inspired storefront.",
         tags: ["Storefront", "Vercel"],
@@ -65,7 +65,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Sultani Jan Seva Kendra",
-        url: "/webdesigns/sultani-jan-seva-kendra",
+        url: "/webdesigns/sultanijansevakendra",
         thumb: "/thumbnails/sultani-jan-seva-kendra.jpg",
         desc: "Cyber cafe & documentation services.",
         tags: ["Service Site", "Vercel"],
@@ -81,7 +81,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Portfolio",
-        url: "/",
+        url: "/webdesigns/portfolio",
         thumb: "/thumbnails/portfolio.jpg",
         desc: "My personal portfolio website.",
         tags: ["Portfolio", "Next.js"],
