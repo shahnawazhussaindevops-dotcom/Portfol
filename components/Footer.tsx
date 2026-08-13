@@ -20,7 +20,7 @@ export default function Footer() {
                         <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500 font-bold mb-4 sm:mb-6">Connect</h4>
                         <ul className="space-y-3 sm:space-y-4 text-sm">
                             <li><a href="mailto:shahnawazhussaindevops@gmail.com" className="text-gray-400 hover:text-white transition-colors">Email</a></li>
-                            <li><a href="https://linkedin.com/in/shah-nawaz-hussain" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/shah-nawaz-hussain-09b740314/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
                             <li><a href="tel:+918077644340" className="text-gray-400 hover:text-white transition-colors">Phone</a></li>
                         </ul>
                     </div>
