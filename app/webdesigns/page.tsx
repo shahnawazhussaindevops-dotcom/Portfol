@@ -26,7 +26,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Neerjharna",
         url: "https://neerjharna-rishikesh.design.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/neerjharna.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://neerjharna-rishikesh.design.shahnawazhussaindevops.in/",
         desc: "Discover the hidden cascade of Rishikesh.",
         tags: ["Landing Page", "Vercel"],
         accent: "#10b981",
@@ -34,7 +34,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Taste The Thunder",
         url: "https://thumpsupcoke.design.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/taste-the-thunder.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://thumpsupcoke.design.shahnawazhussaindevops.in/",
         desc: "Premium beverage brand experience with bold visuals.",
         tags: ["Brand Site", "Vercel"],
         accent: "#f97316",
@@ -42,7 +42,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "CinePose",
         url: "https://cinepose.ai.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/cinepose.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://cinepose.ai.shahnawazhussaindevops.in/",
         desc: "Ultra AI cinema camera product experience.",
         tags: ["Product Page", "Vercel"],
         accent: "#ef4444",
@@ -50,7 +50,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Gaur City",
         url: "https://gaurcity.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/gaur-city.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://gaurcity.shahnawazhussaindevops.in/",
         desc: "Gaur City Centre — the story of your stay, in film.",
         tags: ["Showcase", "Vercel"],
         accent: "#f59e0b",
@@ -58,7 +58,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Realme Speaker",
         url: "https://realme.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/realme-speaker.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://realme.shahnawazhussaindevops.in/",
         desc: "Sound that speaks for itself — a product page for Realme speaker.",
         tags: ["Product Page", "Vercel"],
         accent: "#3b82f6",
@@ -66,7 +66,7 @@ const PROJECTS: WebProject[] = [
     {
         name: "Asus Laptop",
         url: "https://asus.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/asus-laptop.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://asus.shahnawazhussaindevops.in/",
         desc: "Shop laptops, accessories, and more — an Asus India inspired storefront.",
         tags: ["Storefront", "Vercel"],
         accent: "#a855f7",
@@ -74,18 +74,10 @@ const PROJECTS: WebProject[] = [
     {
         name: "Porsche",
         url: "https://porsche.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/porsche.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://porsche.shahnawazhussaindevops.in/",
         desc: "Porsche 911 GT3 RS — Defy Gravity.",
         tags: ["Landing Page", "Vercel"],
         accent: "#ef4444",
-    },
-    {
-        name: "Infra3D Anit",
-        url: "https://infra3d-anit.shahnawazhussaindevops.in/",
-        thumb: "https://image.thum.io/get/width/1200/crop/800/https://infra3d-anit.shahnawazhussaindevops.in/",
-        desc: "3D Infrastructure and Architecture.",
-        tags: ["3D", "Vercel"],
-        accent: "#10b981",
     },
     {
         name: "Doms",
@@ -113,16 +105,16 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Safarnama",
-        url: "https://safarnama.shahnawazhussaindevops.in/",
-        thumb: "https://image.thum.io/get/width/1200/crop/800/https://safarnama.shahnawazhussaindevops.in/",
+        url: "https://safarnama-1.vercel.app/",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://safarnama-1.vercel.app/",
         desc: "Travel and journey experiences.",
         tags: ["Travel", "Vercel"],
         accent: "#ef4444",
     },
     {
         name: "Sultani Jan Seva Kendra",
-        url: "https://sultanijansevakendra.shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/sultani-jan-seva-kendra.jpg",
+        url: "https://sultanijansevakendra.vercel.app/",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://sultanijansevakendra.vercel.app/",
         desc: "Cyber cafe & documentation services.",
         tags: ["Service Site", "Vercel"],
         accent: "#f59e0b",
@@ -130,11 +122,11 @@ const PROJECTS: WebProject[] = [
     {
         name: "Portfolio",
         url: "https://shahnawazhussaindevops.in/",
-        thumb: "/thumbnails/portfolio.jpg",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://shahnawazhussaindevops.in/",
         desc: "My personal portfolio website.",
         tags: ["Portfolio", "Next.js"],
         accent: "#3b82f6",
-    },
+    }
 ];
 
 function ProjectCard({ project, index }: { project: WebProject; index: number }) {
