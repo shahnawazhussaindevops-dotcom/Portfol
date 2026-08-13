@@ -81,23 +81,21 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Portfolio",
-        url: "https://www.shahnawazhussaindevops.in/",
+        url: "/",
         thumb: "/thumbnails/portfolio.jpg",
         desc: "My personal portfolio website.",
-        tags: ["Portfolio", "Vercel"],
+        tags: ["Portfolio", "Next.js"],
         accent: "#3b82f6",
     },
 ];
 
 function ProjectCard({ project, index }: { project: WebProject; index: number }) {
     const [thumbFailed, setThumbFailed] = useState(false);
-    const isExternal = project.url.startsWith("http");
 
     return (
         <motion.a
             href={project.url}
-            target={isExternal ? "_blank" : "_self"}
-            rel={isExternal ? "noopener noreferrer" : undefined}
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
