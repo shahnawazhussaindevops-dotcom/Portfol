@@ -17,7 +17,7 @@ interface WebProject {
 const PROJECTS: WebProject[] = [
     {
         name: "Neerjharna",
-        url: "/webdesigns/neerjharna",
+        url: "https://neerjharna.shahnawazhussaindevops.in",
         thumb: "/thumbnails/neerjharna.jpg",
         desc: "Discover the hidden cascade of Rishikesh.",
         tags: ["Landing Page", "Vercel"],
@@ -25,7 +25,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Porsche",
-        url: "/webdesigns/porsche",
+        url: "https://porsche.shahnawazhussaindevops.in",
         thumb: "/thumbnails/porsche.jpg",
         desc: "Porsche 911 GT3 RS — Defy Gravity.",
         tags: ["Landing Page", "Vercel"],
@@ -33,7 +33,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Gaur City",
-        url: "/webdesigns/gaurcity",
+        url: "https://gaurcity.shahnawazhussaindevops.in",
         thumb: "/thumbnails/gaur-city.jpg",
         desc: "Gaur City Centre — the story of your stay, in film.",
         tags: ["Showcase", "Vercel"],
@@ -41,7 +41,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Realme Speaker",
-        url: "/webdesigns/realmespeaker",
+        url: "https://realmespeaker.shahnawazhussaindevops.in",
         thumb: "/thumbnails/realme-speaker.jpg",
         desc: "Sound that speaks for itself — a product page for Realme speaker.",
         tags: ["Product Page", "Vercel"],
@@ -49,7 +49,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Taste The Thunder",
-        url: "/webdesigns/tastethethunder",
+        url: "https://tastethethunder.shahnawazhussaindevops.in",
         thumb: "/thumbnails/taste-the-thunder.jpg",
         desc: "Premium beverage brand experience with bold visuals.",
         tags: ["Brand Site", "Vercel"],
@@ -57,7 +57,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Asus Laptop",
-        url: "/webdesigns/asuslaptop",
+        url: "https://asuslaptop.shahnawazhussaindevops.in",
         thumb: "/thumbnails/asus-laptop.jpg",
         desc: "Shop laptops, accessories, and more — an Asus India inspired storefront.",
         tags: ["Storefront", "Vercel"],
@@ -65,7 +65,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Sultani Jan Seva Kendra",
-        url: "/webdesigns/sultanijansevakendra",
+        url: "https://sultanijansevakendra.shahnawazhussaindevops.in",
         thumb: "/thumbnails/sultani-jan-seva-kendra.jpg",
         desc: "Cyber cafe & documentation services.",
         tags: ["Service Site", "Vercel"],
@@ -73,7 +73,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "CinePose",
-        url: "/webdesigns/cinepose",
+        url: "https://cinepose.shahnawazhussaindevops.in",
         thumb: "/thumbnails/cinepose.jpg",
         desc: "Ultra AI cinema camera product experience.",
         tags: ["Product Page", "Vercel"],
@@ -81,7 +81,7 @@ const PROJECTS: WebProject[] = [
     },
     {
         name: "Portfolio",
-        url: "/webdesigns/portfolio",
+        url: "https://shahnawazhussaindevops.in",
         thumb: "/thumbnails/portfolio.jpg",
         desc: "My personal portfolio website.",
         tags: ["Portfolio", "Next.js"],
