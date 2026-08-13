@@ -42,19 +42,19 @@ export default function Experience() {
                         </div>
 
                         <ul className="space-y-3 sm:space-y-4 text-gray-400 max-w-4xl">
-                            <li className="flex gap-3 sm:gap-4 text-sm sm:text-base">
+                            <li className="flex gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
                                 <span className="text-blue-500 flex-shrink-0">▶</span>
                                 <span>Architected enterprise Linux infrastructure for 50+ production servers with <span className="text-white">99.9% uptime</span> consistent SLA compliance.</span>
                             </li>
-                            <li className="flex gap-3 sm:gap-4 text-sm sm:text-base">
+                            <li className="flex gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
                                 <span className="text-blue-500 flex-shrink-0">▶</span>
                                 <span>Spearheaded network optimization resulting in <span className="text-white">30% reduction in latency</span> via strategic VLAN segmentation and firewall rules.</span>
                             </li>
-                            <li className="flex gap-3 sm:gap-4 text-sm sm:text-base">
+                            <li className="flex gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
                                 <span className="text-blue-500 flex-shrink-0">▶</span>
                                 <span>Automated provisioning using <span className="text-white">Kickstart</span>, improving deployment efficiency by 60%.</span>
                             </li>
-                            <li className="flex gap-3 sm:gap-4 text-sm sm:text-base">
+                            <li className="flex gap-3 sm:gap-4 text-xs sm:text-sm md:text-base">
                                 <span className="text-blue-500 flex-shrink-0">▶</span>
                                 <span>Deployed hybrid cloud solutions integrating AWS services with on-premise Linux environments.</span>
                             </li>

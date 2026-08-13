@@ -56,7 +56,7 @@ export default function Skills() {
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {category.skills.map(skill => (
-                                    <span key={skill} className="px-2.5 sm:px-3 py-1 bg-white/5 border border-white/5 rounded-md text-xs text-gray-400 font-mono transition-all group-hover:border-white/20 group-hover:text-white">
+                                    <span key={skill} className="px-2 sm:px-3 py-1 bg-white/5 border border-white/5 rounded-md text-[10px] sm:text-xs md:text-sm text-gray-400 font-mono transition-all group-hover:border-white/20 group-hover:text-white">
                                         {skill}
                                     </span>
                                 ))}
