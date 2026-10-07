@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import { BackgroundBeams } from "./ui/background-beams";
+
 const certifications = [
     { name: "Oracle Cloud Infrastructure 2025 Architect Associate", year: "2025" },
     { name: "Oracle Cloud Infrastructure 2025 DevOps Professional", year: "2025" },
@@ -17,8 +19,9 @@ const certifications = [
 
 export default function Certifications() {
     return (
-        <section id="certifications" className="relative z-20 bg-[#121212] py-20 sm:py-28 md:py-32 px-4 sm:px-6 md:px-12 border-t border-white/5">
-            <div className="max-w-7xl mx-auto">
+        <section id="certifications" className="relative z-20 bg-[#121212] py-20 sm:py-28 md:py-32 px-4 sm:px-6 md:px-12 border-t border-white/5 overflow-hidden">
+            <BackgroundBeams className="opacity-40" />
+            <div className="max-w-7xl mx-auto relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +30,7 @@ export default function Certifications() {
                     className="mb-12 sm:mb-16 md:mb-20"
                 >
                     <p className="text-cyan-400 text-xs sm:text-sm tracking-[0.3em] uppercase mb-3 sm:mb-4 font-medium">Credentials</p>
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">Certifications</h2>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-4 sm:mb-6">Certifications</h2>
                     <div className="h-1 w-16 sm:w-24 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full" />
                     <p className="text-gray-400 text-base sm:text-lg mt-4 sm:mt-6">
                         <span className="text-white font-semibold">10× Oracle Certified Professional</span> across Cloud Infrastructure,

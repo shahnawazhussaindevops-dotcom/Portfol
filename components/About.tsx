@@ -1,22 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SquigglyText } from "./ui/squiggly-text";
+import { FlipWords } from "./ui/flip-words";
 
 export default function About() {
     return (
-        <section className="py-12 sm:py-20 md:py-24 px-5 sm:px-10 md:px-16 bg-white text-black rounded-2xl sm:rounded-[2.5rem] md:rounded-[3rem] mx-4 sm:mx-6 md:mx-12 overflow-hidden shadow-2xl relative">
+        <section id="strategy" className="py-12 sm:py-20 md:py-24 px-5 sm:px-10 md:px-16 bg-white text-black rounded-2xl sm:rounded-[2.5rem] md:rounded-[3rem] mx-4 sm:mx-6 md:mx-12 overflow-hidden shadow-2xl relative">
             <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
                 <div className="flex-1 w-full text-center lg:text-left">
-                    <motion.h2
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight tracking-tighter"
                     >
-                        Bridging the gap between{" "}
-                        <span className="text-primary italic block sm:inline">Cloud Complexity</span> &{" "}
-                        Seamless Operations.
-                    </motion.h2>
+                        <SquigglyText>
+                            Bridging the gap between Cloud Complexity & Seamless Operations.
+                        </SquigglyText>
+                        <div className="mt-4 text-2xl sm:text-3xl font-medium text-gray-500 flex flex-wrap items-center justify-center lg:justify-start">
+                            Build beautiful systems with <FlipWords words={["Shahnawazhussain", "Excellence", "Automation"]} className="text-primary" />
+                        </div>
+                    </motion.div>
 
                     <div className="space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed text-justify lg:text-left">
                         <p>

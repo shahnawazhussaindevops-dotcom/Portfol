@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import { BackgroundBeams } from "./ui/background-beams";
+
 const skillCategories = [
     {
         title: "OS & Virtualization",
@@ -31,10 +33,11 @@ const skillCategories = [
 
 export default function Skills() {
     return (
-        <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#0a0a0a]">
-            <div className="max-w-7xl mx-auto">
+        <section id="tech" className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#0a0a0a] overflow-hidden">
+            <BackgroundBeams className="opacity-60" />
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="mb-10 sm:mb-16">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Technical Arsenal</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-4">Technical Arsenal</h2>
                     <p className="text-gray-400 text-base sm:text-lg border-l-2 border-primary pl-4 sm:pl-6 ml-1 sm:ml-2">
                         A comprehensive suite of tools and protocols mastered for enterprise-scale stability.
                     </p>

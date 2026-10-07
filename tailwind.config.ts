@@ -21,6 +21,10 @@ const config: Config = {
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
+            fontFamily: {
+                sans: ["var(--font-inter)", "sans-serif"],
+                display: ["var(--font-fraunces)", "serif"],
+            },
             colors: {
                 background: "#121212",
                 foreground: "#ffffff",
@@ -32,6 +36,7 @@ const config: Config = {
                 'shine': 'shine 2s infinite',
                 'fade-in': 'fadeIn 1s ease-out forwards',
                 'slide-up': 'slideUp 0.8s ease-out forwards',
+                'squiggly': 'squiggly 0.34s linear infinite',
             },
             keyframes: {
                 shine: {
@@ -45,6 +50,13 @@ const config: Config = {
                 slideUp: {
                     '0%': { transform: 'translateY(30px)', opacity: '0' },
                     '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                squiggly: {
+                    '0%': { filter: 'url("#squiggly-0")' },
+                    '25%': { filter: 'url("#squiggly-1")' },
+                    '50%': { filter: 'url("#squiggly-2")' },
+                    '75%': { filter: 'url("#squiggly-3")' },
+                    '100%': { filter: 'url("#squiggly-4")' },
                 },
             },
             backdropBlur: {

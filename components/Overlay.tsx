@@ -1,6 +1,7 @@
 "use client";
 
 import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
+import { NumberTicker } from "./ui/number-ticker";
 
 export default function Overlay({ scrollYProgress: externalScrollYProgress }: { scrollYProgress?: MotionValue<number> }) {
     const { scrollYProgress: localScrollYProgress } = useScroll();
@@ -56,11 +57,15 @@ export default function Overlay({ scrollYProgress: externalScrollYProgress }: { 
                             </p>
                             <div className="flex gap-4 sm:gap-8">
                                 <div>
-                                    <div className="text-xl sm:text-4xl font-bold text-emerald-400">99.9%</div>
+                                    <div className="text-xl sm:text-4xl font-bold text-emerald-400">
+                                        <NumberTicker value={99.9} suffix="%" />
+                                    </div>
                                     <div className="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-500 mt-1">Uptime Maintained</div>
                                 </div>
                                 <div>
-                                    <div className="text-xl sm:text-4xl font-bold text-blue-400">30%</div>
+                                    <div className="text-xl sm:text-4xl font-bold text-blue-400">
+                                        <NumberTicker value={30} suffix="%" />
+                                    </div>
                                     <div className="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-500 mt-1">Latency Reduction</div>
                                 </div>
                             </div>
@@ -116,11 +121,15 @@ export default function Overlay({ scrollYProgress: externalScrollYProgress }: { 
                         <div className="w-full md:w-px h-px md:h-24 bg-gradient-to-r md:bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
                         <div className="flex-shrink-0 grid grid-cols-2 gap-4 sm:gap-8">
                             <div className="text-center">
-                                <div className="text-xl sm:text-3xl font-bold text-white leading-none">50+</div>
+                                <div className="text-xl sm:text-3xl font-bold text-white leading-none">
+                                    <NumberTicker value={50} suffix="+" />
+                                </div>
                                 <div className="text-[9px] sm:text-[10px] uppercase text-gray-500 mt-1 sm:mt-2">Servers</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-xl sm:text-3xl font-bold text-white leading-none">60%</div>
+                                <div className="text-xl sm:text-3xl font-bold text-white leading-none">
+                                    <NumberTicker value={60} suffix="%" />
+                                </div>
                                 <div className="text-[9px] sm:text-[10px] uppercase text-gray-500 mt-1 sm:mt-2">Efficiency Boost</div>
                             </div>
                         </div>
