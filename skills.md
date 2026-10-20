@@ -1,5 +1,4 @@
 # Gaur City Centre · Design & Animation Skills Library
-
 A permanent registry of every design/animation skill and UI component library available to this project. Skills marked **INSTALLED** live in `C:\Users\ASUS\.config\opencode\skills\<name>\SKILL.md` and load automatically. Libraries are recorded here with commands so they can be added to any project forever.
 
 ---

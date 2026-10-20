@@ -114,7 +114,7 @@ export default function ScrollyCanvas({ children }: { children?: React.ReactNode
     });
 
     return (
-        <div ref={containerRef} className="h-[600vh] relative bg-black">
+        <div ref={containerRef} className="h-[350vh] sm:h-[450vh] md:h-[600vh] relative bg-black">
             <div className="sticky top-0 h-screen w-full overflow-hidden">
                 <canvas
                     ref={canvasRef}

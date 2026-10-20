@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { FloatingDock } from "./ui/floating-dock";
 import {
   Home,
@@ -52,8 +51,9 @@ const dockItems = [
 
 export default function Navbar() {
   return (
-    <div className="fixed top-12 sm:top-16 left-4 sm:left-6 z-50 flex pointer-events-auto">
-      <FloatingDock items={dockItems} desktopClassName="bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl" mobileClassName="absolute top-0 right-4" />
+    <div className="fixed top-4 right-4 md:top-12 md:left-6 md:right-auto z-50 flex pointer-events-auto">
+      <FloatingDock items={dockItems} desktopClassName="bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl" mobileClassName="" />
     </div>
   );
 }
+

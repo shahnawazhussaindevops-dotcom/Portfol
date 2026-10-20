@@ -126,7 +126,31 @@ const PROJECTS: WebProject[] = [
         desc: "My personal portfolio website.",
         tags: ["Portfolio", "Next.js"],
         accent: "#3b82f6",
-    }
+    },
+    {
+        name: "Volvo",
+        url: "https://volvo.shahnawazhussaindevops.in/",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://volvo.shahnawazhussaindevops.in/",
+        desc: "Volvo — luxury automotive brand experience.",
+        tags: ["Automotive", "Vercel"],
+        accent: "#1e40af",
+    },
+    {
+        name: "Statue",
+        url: "https://statue.shahnawazhussaindevops.in/",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://statue.shahnawazhussaindevops.in/",
+        desc: "Statue of Unity — a tribute to India's heritage.",
+        tags: ["Showcase", "Vercel"],
+        accent: "#d97706",
+    },
+    {
+        name: "Mahindra BE6",
+        url: "https://be6.shahnawazhussaindevops.in/",
+        thumb: "https://image.thum.io/get/width/1200/crop/800/https://be6.shahnawazhussaindevops.in/",
+        desc: "Mahindra BE 6 — born electric, built bold.",
+        tags: ["Automotive", "Vercel"],
+        accent: "#dc2626",
+    },
 ];
 
 function ProjectCard({ project, index }: { project: WebProject; index: number }) {

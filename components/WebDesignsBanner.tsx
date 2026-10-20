@@ -6,9 +6,9 @@ const previews = [
     { name: "Porsche", accent: "#ef4444" },
     { name: "Neerjharna", accent: "#10b981" },
     { name: "CinePose", accent: "#ef4444" },
-    { name: "Realme Speaker", accent: "#3b82f6" },
-    { name: "Taste The Thunder", accent: "#f97316" },
-    { name: "Asus Laptop", accent: "#a855f7" },
+    { name: "Volvo", accent: "#1e40af" },
+    { name: "Mahindra BE6", accent: "#dc2626" },
+    { name: "Statue", accent: "#d97706" },
 ];
 
 export default function WebDesignsBanner() {
@@ -36,7 +36,7 @@ export default function WebDesignsBanner() {
                                 <span className="text-gradient">Portfolio</span>
                             </h2>
                             <p className="text-gray-400 text-sm sm:text-base max-w-md">
-                                9 live projects deployed on Vercel — landing pages, product showcases, brand experiences and more.
+                                17 live projects deployed on Vercel — landing pages, product showcases, brand experiences and more.
                             </p>
 
                             <div className="mt-6 sm:mt-8 inline-flex items-center gap-3 bg-primary text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-widest group-hover:bg-white group-hover:text-black transition-all duration-300">
@@ -63,7 +63,7 @@ export default function WebDesignsBanner() {
                                 </motion.span>
                             ))}
                             <span className="px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-mono border border-white/10 text-gray-500">
-                                +3 more
+                                +11 more
                             </span>
                         </div>
                     </div>

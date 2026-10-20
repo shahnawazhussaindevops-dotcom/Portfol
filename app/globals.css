@@ -12,12 +12,19 @@
         @apply bg-[#121212] text-white selection:bg-purple-500/30;
         font-feature-settings: "rlig" 1, "calt" 1;
         overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -44,3 +51,10 @@ canvas {
 .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400;
 }
+
+/* Mobile touch optimizations */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
