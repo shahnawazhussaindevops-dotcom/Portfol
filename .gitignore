@@ -47,3 +47,6 @@ git_status*.txt
 git_remote.txt
 skills.md
 SKILL.md
+
+# helper scripts run locally (not part of the site)
+push-portfolio.ps1
