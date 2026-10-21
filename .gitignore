@@ -39,3 +39,11 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# scratch / backup files (kept out of the repo)
+*.bak
+*-utf8.txt
+git_status*.txt
+git_remote.txt
+skills.md
+SKILL.md
