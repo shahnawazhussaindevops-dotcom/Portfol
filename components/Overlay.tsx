@@ -1,11 +1,15 @@
 "use client";
 
-import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
+import { useScroll, motion, useTransform } from "framer-motion";
+import { RefObject } from "react";
 import { NumberTicker } from "./ui/number-ticker";
 
-export default function Overlay({ scrollYProgress: externalScrollYProgress }: { scrollYProgress?: MotionValue<number> }) {
-    const { scrollYProgress: localScrollYProgress } = useScroll();
-    const scrollYProgress = externalScrollYProgress || localScrollYProgress;
+export default function Overlay({ containerRef }: { containerRef?: RefObject<HTMLDivElement> }) {
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start start", "end end"],
+        layoutEffect: false,
+    });
 
     const op1 = useTransform(scrollYProgress, [0, 0.05, 0.12], [0, 1, 0]);
     const op2 = useTransform(scrollYProgress, [0.15, 0.22, 0.35], [0, 1, 0]);
