@@ -1,15 +1,11 @@
 "use client";
 
-import { useScroll, motion, useTransform } from "framer-motion";
-import { RefObject } from "react";
+import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
 import { NumberTicker } from "./ui/number-ticker";
 
-export default function Overlay({ containerRef }: { containerRef?: RefObject<HTMLDivElement> }) {
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end end"],
-        layoutEffect: false,
-    });
+export default function Overlay({ scrollYProgress: externalScrollYProgress }: { scrollYProgress?: MotionValue<number> }) {
+    const { scrollYProgress: localScrollYProgress } = useScroll();
+    const scrollYProgress = externalScrollYProgress || localScrollYProgress;
 
     const op1 = useTransform(scrollYProgress, [0, 0.05, 0.12], [0, 1, 0]);
     const op2 = useTransform(scrollYProgress, [0.15, 0.22, 0.35], [0, 1, 0]);
@@ -34,7 +30,7 @@ export default function Overlay({ containerRef }: { containerRef?: RefObject<HTM
                     SHAH NAWAZ <br /><span className="text-gradient">HUSSAIN</span>
                 </h1>
                 <p className="text-[10px] sm:text-sm md:text-lg text-gray-400 font-light tracking-[0.1em] sm:tracking-[0.4em] uppercase text-center max-w-2xl mt-2 px-2">
-                    Cloud Infrastructure Specialist & Linux Administrator
+                    Cloud Infrastructure Specialist &amp; Linux Administrator
                 </p>
                 <div className="mt-6 sm:mt-12 flex flex-wrap justify-center gap-2 sm:gap-4 text-[9px] sm:text-xs font-mono text-blue-400">
                     <span>+91-8077644340</span>
@@ -94,7 +90,7 @@ export default function Overlay({ containerRef }: { containerRef?: RefObject<HTM
                 <div className="max-w-[280px] sm:max-w-sm md:max-w-2xl text-right">
                     <h2 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-6 text-white leading-tight">
                         Certified <br />
-                        <span className="text-gradient font-black underline decoration-purple-500/50">Oracle & AWS</span> <br />
+                        <span className="text-gradient font-black underline decoration-purple-500/50">Oracle &amp; AWS</span> <br />
                         Strategist.
                     </h2>
                     <p className="text-gray-400 text-xs sm:text-base md:text-lg mb-4 sm:mb-8 max-w-[240px] sm:max-w-md ml-auto">
@@ -119,7 +115,7 @@ export default function Overlay({ containerRef }: { containerRef?: RefObject<HTM
                             <span className="text-emerald-400 font-mono text-[10px] sm:text-sm tracking-widest block mb-1 sm:mb-2">CURRENT MISSION</span>
                             <h3 className="text-xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4">Shadow Infosystem</h3>
                             <p className="text-gray-400 text-xs sm:text-base leading-relaxed italic">
-                                "Architecting and maintaining enterprise Linux infrastructure comprising 50+ production servers with 60% reduction in deployment time through Kickstart automation."
+                                &quot;Architecting and maintaining enterprise Linux infrastructure comprising 50+ production servers with 60% reduction in deployment time through Kickstart automation.&quot;
                             </p>
                         </div>
                         <div className="w-full md:w-px h-px md:h-24 bg-gradient-to-r md:bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
